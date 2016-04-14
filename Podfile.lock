@@ -1,0 +1,35 @@
+PODS:
+  - MJRefresh (3.1.0)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (2.0.3)
+  - YYCategories (1.0.1):
+    - YYCategories/no-arc (= 1.0.1)
+  - YYCategories/no-arc (1.0.1)
+  - YYKeyboardManager (1.0.1)
+
+DEPENDENCIES:
+  - MJRefresh
+  - SDWebImage (~> 3.0)
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+  - YYCategories
+  - YYKeyboardManager
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: c406f0ac1929b21ab444608eb4ab27035bb57a21
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  YYCategories: ebd2d2d473de67a29fbfb83e812c350966cc256f
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+
+COCOAPODS: 0.39.0

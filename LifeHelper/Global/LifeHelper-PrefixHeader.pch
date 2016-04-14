@@ -1,0 +1,43 @@
+//
+//  LifeHelper-PrefixHeader.pch
+//  LifeHelper
+//
+//  Created by AEF-RD-1 on 16/3/15.
+//  Copyright © 2016年 ___lost...souls__yim4ever. All rights reserved.
+//
+
+#ifndef LifeHelper_PrefixHeader_pch
+#define LifeHelper_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LifeHelper_PrefixHeader_pch */
+
+
+/*
+ //DEBUG和RELEASE要分开，RELEASE时log打印要取消
+ 1.Product-->Scheme-->Edit Scheme -Run -
+ 1.1设置Build Configuration成Debug时，就可以打印nslog了。
+ 1.2设置Release，发布app版本的时候就不会打印了，提高了性能
+ */
+#ifdef DEBUG
+#define NNLog( s, ... ) NSLog( @"L:%d [%@: - %@] %@", __LINE__, [[NSString stringWithUTF8String:__FILE__] lastPathComponent],NSStringFromSelector(_cmd), [NSString stringWithFormat:(s), ##__VA_ARGS__] ); //分别是文件名，在文件的第几行，自定义输出内容
+#else
+#define NNLog( s, ... )
+#endif
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GlobalTool.h"
+#import "HttpRequestObj.h"
+#import "AlertView.h"
+#import "HttpRequestURL.h"
+#import "NotFoundView.h"
+
+#endif
+
+

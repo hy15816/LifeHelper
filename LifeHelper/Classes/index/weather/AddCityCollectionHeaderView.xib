@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10115" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header_id" id="U6b-Vx-4bR" customClass="AddCityCollectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvp-8r-9TH">
+                    <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Yh5-Ij-GU8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o90-nU-oTk">
+                    <rect key="frame" x="160" y="51" width="1" height="49"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="WsX-M5-VMW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhm-Z9-uOZ">
+                    <rect key="frame" x="181" y="61" width="119" height="29"/>
+                    <state key="normal" title="自动定位"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8L-M9-ruo">
+                    <rect key="frame" x="20" y="61" width="120" height="29"/>
+                    <state key="normal" title="热门城市"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入城市关键字搜索" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X39-Sf-tz9">
+                    <rect key="frame" x="20" y="5" width="280" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="X39-Sf-tz9" secondAttribute="trailing" constant="20" id="2gj-Y9-NLd"/>
+                <constraint firstItem="o90-nU-oTk" firstAttribute="leading" secondItem="d8L-M9-ruo" secondAttribute="trailing" constant="20" id="4G7-Kf-QMH"/>
+                <constraint firstItem="yvp-8r-9TH" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="5On-OV-WUV"/>
+                <constraint firstItem="yvp-8r-9TH" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="8q3-1g-U7m"/>
+                <constraint firstItem="o90-nU-oTk" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="Cwx-PY-V4u"/>
+                <constraint firstItem="yvp-8r-9TH" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Fzg-7V-rEE"/>
+                <constraint firstItem="Jhm-Z9-uOZ" firstAttribute="leading" secondItem="o90-nU-oTk" secondAttribute="trailing" constant="20" id="K0N-7y-F8m"/>
+                <constraint firstItem="o90-nU-oTk" firstAttribute="top" secondItem="yvp-8r-9TH" secondAttribute="bottom" id="T5U-aG-j5g"/>
+                <constraint firstItem="X39-Sf-tz9" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="TF3-NA-WOp"/>
+                <constraint firstAttribute="bottom" secondItem="Jhm-Z9-uOZ" secondAttribute="bottom" constant="10" id="W47-Y0-qog"/>
+                <constraint firstAttribute="trailing" secondItem="yvp-8r-9TH" secondAttribute="trailing" id="aZr-hh-QpH"/>
+                <constraint firstItem="Jhm-Z9-uOZ" firstAttribute="top" secondItem="yvp-8r-9TH" secondAttribute="bottom" constant="10" id="hUN-YT-KCe"/>
+                <constraint firstItem="X39-Sf-tz9" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="iEl-MT-LVn"/>
+                <constraint firstAttribute="bottom" secondItem="o90-nU-oTk" secondAttribute="bottom" id="jmy-uh-3jf"/>
+                <constraint firstItem="yvp-8r-9TH" firstAttribute="top" secondItem="X39-Sf-tz9" secondAttribute="bottom" constant="5" id="mB8-hG-Swj"/>
+                <constraint firstAttribute="trailing" secondItem="Jhm-Z9-uOZ" secondAttribute="trailing" constant="20" id="rQF-OC-xcD"/>
+                <constraint firstItem="d8L-M9-ruo" firstAttribute="top" secondItem="yvp-8r-9TH" secondAttribute="bottom" constant="10" id="rwm-N5-6F9"/>
+                <constraint firstAttribute="bottom" secondItem="d8L-M9-ruo" secondAttribute="bottom" constant="10" id="x4x-hw-5gv"/>
+                <constraint firstItem="d8L-M9-ruo" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="zqD-0X-dgJ"/>
+            </constraints>
+            <point key="canvasLocation" x="546" y="355"/>
+        </collectionReusableView>
+        <searchDisplayController id="H0v-oE-jVm"/>
+    </objects>
+</document>

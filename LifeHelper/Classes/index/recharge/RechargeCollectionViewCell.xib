@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10115" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1rY-3i-h0E" customClass="RechargeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzz-85-K82">
+                        <rect key="frame" x="57" y="20" width="58" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售价:497.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcb-T5-pZs">
+                        <rect key="frame" x="53" y="44" width="67" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="W8O-aL-1AM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="pzz-85-K82" firstAttribute="centerX" secondItem="1rY-3i-h0E" secondAttribute="centerX" id="JhL-Q2-yGz"/>
+                <constraint firstItem="Gcb-T5-pZs" firstAttribute="top" secondItem="pzz-85-K82" secondAttribute="bottom" id="Q1a-p7-pSG"/>
+                <constraint firstItem="Gcb-T5-pZs" firstAttribute="centerX" secondItem="1rY-3i-h0E" secondAttribute="centerX" id="qPX-5c-jmn"/>
+                <constraint firstItem="pzz-85-K82" firstAttribute="centerY" secondItem="1rY-3i-h0E" secondAttribute="centerY" multiplier="0.8" id="xpe-3i-PXb"/>
+            </constraints>
+            <size key="customSize" width="172" height="80"/>
+            <connections>
+                <outlet property="rechargeAmountLabel" destination="pzz-85-K82" id="iwE-rO-Weq"/>
+                <outlet property="rechargePaymentLabel" destination="Gcb-T5-pZs" id="PB1-zQ-N6b"/>
+            </connections>
+            <point key="canvasLocation" x="505" y="256"/>
+        </collectionViewCell>
+    </objects>
+</document>
