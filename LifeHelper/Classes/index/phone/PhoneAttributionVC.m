@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *minVolumeImg;
 @property (strong, nonatomic) IBOutlet UIImageView *maxVolumeImg;
 
+@property (strong, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -35,6 +36,11 @@
     self.tipsLabel.text = nil;
 
     [self earphoneInOrOut];
+    
+    self.button.enabled = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.button.enabled = YES;
+    });
     
 }
 

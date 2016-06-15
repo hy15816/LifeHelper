@@ -6,13 +6,15 @@
 //  Copyright © 2016年 yim. All rights reserved.
 //
 
-#define noDisableVerticalScrollTag 836913
-#define noDisableHorizontalScrollTag 836914
+#define noDisableVerticalScrollTag      836913
+#define noDisableHorizontalScrollTag    836914
 
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (ShowIndicators)
 
 - (void)setAlpha:(CGFloat)alpha;
+
+
 
 @end

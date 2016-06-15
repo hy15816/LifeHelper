@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I5r-Cb-OOi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I5r-Cb-OOi">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -218,7 +218,7 @@
                                         </variation>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Vl7-ni-yAO" firstAttribute="leading" secondItem="xpL-LZ-rRR" secondAttribute="leading" constant="20" id="MIQ-We-BNm"/>
                                     <constraint firstAttribute="height" constant="45" id="Znt-jh-JrG"/>
@@ -228,6 +228,14 @@
                                     <constraint firstAttribute="trailing" secondItem="If8-Kl-akq" secondAttribute="trailing" constant="20" id="xjy-ix-2T7"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-bC-2uZ">
+                                <rect key="frame" x="15" y="237" width="571" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lqP-ba-hkj"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="btn_bgimg_normal"/>
+                                <state key="highlighted" backgroundImage="btn_bgimg_select"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -241,9 +249,12 @@
                             <constraint firstAttribute="trailing" secondItem="kK6-sb-KRS" secondAttribute="trailing" constant="20" id="PEh-Mf-h2h"/>
                             <constraint firstItem="xpL-LZ-rRR" firstAttribute="leading" secondItem="dE7-9M-7eM" secondAttribute="leading" id="QNP-9c-a2a"/>
                             <constraint firstItem="KPa-UR-p54" firstAttribute="top" secondItem="xpL-LZ-rRR" secondAttribute="bottom" constant="100" id="Zsa-Jh-oaw"/>
+                            <constraint firstItem="Fpb-bC-2uZ" firstAttribute="leading" secondItem="dE7-9M-7eM" secondAttribute="leading" constant="15" id="aNG-UW-Ph2"/>
+                            <constraint firstItem="Fpb-bC-2uZ" firstAttribute="centerX" secondItem="dE7-9M-7eM" secondAttribute="centerX" id="d4s-Sh-tZA"/>
                             <constraint firstItem="Hc9-Sc-iyK" firstAttribute="leading" secondItem="dE7-9M-7eM" secondAttribute="leading" constant="20" id="fru-dp-k9O"/>
                             <constraint firstItem="ewj-Xs-01o" firstAttribute="top" secondItem="kK6-sb-KRS" secondAttribute="bottom" constant="15" id="gqm-Fc-Pt9"/>
                             <constraint firstItem="ewj-Xs-01o" firstAttribute="leading" secondItem="dE7-9M-7eM" secondAttribute="leading" constant="20" id="jWy-Qq-kO3"/>
+                            <constraint firstItem="Fpb-bC-2uZ" firstAttribute="top" secondItem="Hc9-Sc-iyK" secondAttribute="bottom" constant="18" id="jl0-hf-8GS"/>
                             <constraint firstAttribute="trailing" secondItem="xpL-LZ-rRR" secondAttribute="trailing" id="ssO-K7-DEU"/>
                             <constraint firstItem="Hc9-Sc-iyK" firstAttribute="centerX" secondItem="dE7-9M-7eM" secondAttribute="centerX" id="wie-b6-BMF"/>
                             <constraint firstItem="xpL-LZ-rRR" firstAttribute="top" secondItem="Hc9-Sc-iyK" secondAttribute="bottom" constant="245" id="z7b-dW-urp"/>
@@ -256,6 +267,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="号码归属地查询" id="TUR-gw-tEf"/>
                     <connections>
+                        <outlet property="button" destination="Fpb-bC-2uZ" id="Df3-Ma-pZV"/>
                         <outlet property="inputField" destination="ewj-Xs-01o" id="MqC-eA-LSo"/>
                         <outlet property="maxVolumeImg" destination="If8-Kl-akq" id="Uup-eD-3I5"/>
                         <outlet property="minVolumeImg" destination="Vl7-ni-yAO" id="f0a-ak-znr"/>
@@ -950,7 +962,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="cFb-EL-f7n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="6yX-FO-MR2">
                                 <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -1058,6 +1070,8 @@
     </scenes>
     <resources>
         <image name="airQuality" width="15" height="13"/>
+        <image name="btn_bgimg_normal" width="125" height="20"/>
+        <image name="btn_bgimg_select" width="125" height="20"/>
         <image name="releaseTime" width="20" height="20"/>
         <image name="running_heavy" width="30" height="30"/>
         <image name="running_moderate" width="30" height="30"/>

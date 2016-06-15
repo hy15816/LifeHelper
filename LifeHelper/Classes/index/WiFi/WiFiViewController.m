@@ -17,6 +17,9 @@
 #import <arpa/inet.h>
 #import <net/if.h>
 
+
+#import "TestLoopViewController.h"
+
 @interface WiFiViewController ()
 
 @end
@@ -27,14 +30,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self fetchSSIDInfo];
-    [self abc];
+//    [self fetchSSIDInfo];
+//    [self abc];
+//    
+//    [self address];
+//    NNLog(@",,,,,,,,,,%@",[self getWIFIDic]);
     
-    [self address];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"->" style:UIBarButtonItemStyleDone target:self action:@selector(goTestLoopView)];
     
-    NNLog(@",,,,,,,,,,%@",[self getWIFIDic]);
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    
     
 }
+
+- (void)goTestLoopView {
+    
+    TestLoopViewController *test = [[TestLoopViewController alloc] init];
+    [self.navigationController pushViewController:test animated:YES];
+}
+
+
 
 - (id)fetchSSIDInfo {
     NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();

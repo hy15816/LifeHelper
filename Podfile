@@ -4,4 +4,5 @@ pod 'SVProgressHUD',:git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod 'YYKeyboardManager'
 pod 'YYCategories'
 pod 'SDWebImage', '~>3.0'
+pod 'TextFieldEffects'
 

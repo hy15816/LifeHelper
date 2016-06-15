@@ -11,4 +11,4 @@
 #import <Foundation/Foundation.h>
 
 LOCAL_FILENAME_EXTERN NSString *const kSharesFileName;
-
+LOCAL_FILENAME_EXTERN NSString *const kFoodsFileName;

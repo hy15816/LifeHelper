@@ -98,6 +98,15 @@
 		13FCBD361CBB78F3000A20E2 /* SharesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FCBD351CBB78F3000A20E2 /* SharesStoryboard.storyboard */; };
 		13FCBD391CBB7B68000A20E2 /* SharesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FCBD381CBB7B68000A20E2 /* SharesModel.m */; };
 		B24D3BFB38014C060609A257 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45BA2884E1749281375D988 /* libPods.a */; };
+		B425EFE31CF0165F004159CB /* LSLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFE21CF0165F004159CB /* LSLoopView.m */; };
+		B425EFE61CF0276F004159CB /* TestLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFE51CF0276F004159CB /* TestLoopViewController.m */; };
+		B425EFF71CF2BA2E004159CB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFEA1CF2BA2E004159CB /* TAAbstractDotView.m */; };
+		B425EFF81CF2BA2E004159CB /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFEC1CF2BA2E004159CB /* TAAnimatedDotView.m */; };
+		B425EFF91CF2BA2E004159CB /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFEE1CF2BA2E004159CB /* TADotView.m */; };
+		B425EFFA1CF2BA2E004159CB /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF01CF2BA2E004159CB /* TAPageControl.m */; };
+		B425EFFB1CF2BA2E004159CB /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF21CF2BA2E004159CB /* SDCollectionViewCell.m */; };
+		B425EFFC1CF2BA2E004159CB /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF41CF2BA2E004159CB /* SDCycleScrollView.m */; };
+		B425EFFD1CF2BA2E004159CB /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF61CF2BA2E004159CB /* UIView+SDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +285,24 @@
 		13FCBD371CBB7B68000A20E2 /* SharesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharesModel.h; sourceTree = "<group>"; };
 		13FCBD381CBB7B68000A20E2 /* SharesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharesModel.m; sourceTree = "<group>"; };
 		36AE39110195C5FF52BC3A73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B425EFE11CF0165F004159CB /* LSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoopView.h; sourceTree = "<group>"; };
+		B425EFE21CF0165F004159CB /* LSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoopView.m; sourceTree = "<group>"; };
+		B425EFE41CF0276F004159CB /* TestLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLoopViewController.h; sourceTree = "<group>"; };
+		B425EFE51CF0276F004159CB /* TestLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLoopViewController.m; sourceTree = "<group>"; };
+		B425EFE91CF2BA2E004159CB /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		B425EFEA1CF2BA2E004159CB /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		B425EFEB1CF2BA2E004159CB /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		B425EFEC1CF2BA2E004159CB /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		B425EFED1CF2BA2E004159CB /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		B425EFEE1CF2BA2E004159CB /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		B425EFEF1CF2BA2E004159CB /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		B425EFF01CF2BA2E004159CB /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		B425EFF11CF2BA2E004159CB /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		B425EFF21CF2BA2E004159CB /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		B425EFF31CF2BA2E004159CB /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		B425EFF41CF2BA2E004159CB /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		B425EFF51CF2BA2E004159CB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		B425EFF61CF2BA2E004159CB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		C45BA2884E1749281375D988 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3B0B8E496F60746FBFA12B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -338,6 +365,8 @@
 			children = (
 				1354AAD11CB510BE006F1C8E /* WiFiViewController.h */,
 				1354AAD21CB510BE006F1C8E /* WiFiViewController.m */,
+				B425EFE41CF0276F004159CB /* TestLoopViewController.h */,
+				B425EFE51CF0276F004159CB /* TestLoopViewController.m */,
 			);
 			path = WiFi;
 			sourceTree = "<group>";
@@ -489,6 +518,7 @@
 		136541291C97BAD400A2E901 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				B425EFE71CF2BA2E004159CB /* SDCycleScrollView */,
 				136537111CBE2543008B6F98 /* MPNotificationView */,
 				1366EAD71CA23C160081D2F9 /* BaiduMap */,
 			);
@@ -498,6 +528,7 @@
 		1365412A1C97BAD400A2E901 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				B425EFE01CF0165F004159CB /* loopView */,
 				137239A31C9CDDFB00CE3338 /* customKeyboard */,
 				13BEDB6E1C97FF44004619F6 /* Classes */,
 				1365414C1C97BD5B00A2E901 /* HttpRequest */,
@@ -756,6 +787,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B425EFE01CF0165F004159CB /* loopView */ = {
+			isa = PBXGroup;
+			children = (
+				B425EFE11CF0165F004159CB /* LSLoopView.h */,
+				B425EFE21CF0165F004159CB /* LSLoopView.m */,
+			);
+			path = loopView;
+			sourceTree = "<group>";
+		};
+		B425EFE71CF2BA2E004159CB /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B425EFE81CF2BA2E004159CB /* PageControl */,
+				B425EFF11CF2BA2E004159CB /* SDCollectionViewCell.h */,
+				B425EFF21CF2BA2E004159CB /* SDCollectionViewCell.m */,
+				B425EFF31CF2BA2E004159CB /* SDCycleScrollView.h */,
+				B425EFF41CF2BA2E004159CB /* SDCycleScrollView.m */,
+				B425EFF51CF2BA2E004159CB /* UIView+SDExtension.h */,
+				B425EFF61CF2BA2E004159CB /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		B425EFE81CF2BA2E004159CB /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				B425EFE91CF2BA2E004159CB /* TAAbstractDotView.h */,
+				B425EFEA1CF2BA2E004159CB /* TAAbstractDotView.m */,
+				B425EFEB1CF2BA2E004159CB /* TAAnimatedDotView.h */,
+				B425EFEC1CF2BA2E004159CB /* TAAnimatedDotView.m */,
+				B425EFED1CF2BA2E004159CB /* TADotView.h */,
+				B425EFEE1CF2BA2E004159CB /* TADotView.m */,
+				B425EFEF1CF2BA2E004159CB /* TAPageControl.h */,
+				B425EFF01CF2BA2E004159CB /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		BC24A61D97B474FBF81F621D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,10 +1041,14 @@
 				136541521C97DB7E00A2E901 /* HttpRequestURL.m in Sources */,
 				1354AAD31CB510BE006F1C8E /* WiFiViewController.m in Sources */,
 				137239A61C9CDE3300CE3338 /* YIMKeyboardView.m in Sources */,
+				B425EFF81CF2BA2E004159CB /* TAAnimatedDotView.m in Sources */,
 				137239AA1C9CDFD700CE3338 /* KeyboardCollectionViewCell.m in Sources */,
 				1354AAAA1CB4B9A5006F1C8E /* AKNumericFormatter.m in Sources */,
+				B425EFFC1CF2BA2E004159CB /* SDCycleScrollView.m in Sources */,
+				B425EFFB1CF2BA2E004159CB /* SDCollectionViewCell.m in Sources */,
 				13DCE7081CAD253700E96BD2 /* PhotoTableViewController.m in Sources */,
 				137C03EB1CA14F7800D48EA9 /* AddCityModel.m in Sources */,
+				B425EFFD1CF2BA2E004159CB /* UIView+SDExtension.m in Sources */,
 				13FCBD391CBB7B68000A20E2 /* SharesModel.m in Sources */,
 				136541451C97BBEA00A2E901 /* NSString+TextHeight.m in Sources */,
 				1354AAAB1CB4B9A5006F1C8E /* NSString+AKNumericFormatter.m in Sources */,
@@ -995,6 +1068,7 @@
 				137C03BF1CA0E99400D48EA9 /* SettingsTableViewController.m in Sources */,
 				1365415E1C97E14C00A2E901 /* IndexCollectionModel.m in Sources */,
 				136B17161C9BFB6A00BDF51B /* RechargeCollectionHeaderView.m in Sources */,
+				B425EFFA1CF2BA2E004159CB /* TAPageControl.m in Sources */,
 				137C03E31CA141AD00D48EA9 /* AddCityTableViewController.m in Sources */,
 				1354AAAC1CB4B9A5006F1C8E /* UITextField+AKNumericFormatter.m in Sources */,
 				137C03E71CA141D000D48EA9 /* AddCityTableViewCell.m in Sources */,
@@ -1012,8 +1086,11 @@
 				135C14DD1CAA613E00C5D654 /* ChartView.m in Sources */,
 				136541341C97BB5600A2E901 /* YIMPlayGifView.m in Sources */,
 				13BEDB801C980C77004619F6 /* PhoneAttribution.m in Sources */,
+				B425EFE61CF0276F004159CB /* TestLoopViewController.m in Sources */,
+				B425EFF71CF2BA2E004159CB /* TAAbstractDotView.m in Sources */,
 				136541331C97BB5600A2E901 /* LoginTableViewController.m in Sources */,
 				13622EE31CB6070400520BD3 /* FoodsTableViewController.m in Sources */,
+				B425EFE31CF0165F004159CB /* LSLoopView.m in Sources */,
 				13FCBD341CBB78DA000A20E2 /* SharesCell.m in Sources */,
 				137C03BB1CA0D47600D48EA9 /* ShakeViewController.m in Sources */,
 				136540F71C97B93E00A2E901 /* main.m in Sources */,
@@ -1021,6 +1098,7 @@
 				137C03E01CA1315A00D48EA9 /* AddCityCollectionViewController.m in Sources */,
 				13622EE81CB6420F00520BD3 /* FoodsListCell.m in Sources */,
 				13FCBD311CBB7875000A20E2 /* SharesTableViewController.m in Sources */,
+				B425EFF91CF2BA2E004159CB /* TADotView.m in Sources */,
 				136541441C97BBEA00A2E901 /* NSString+MD5.m in Sources */,
 				136541561C97E0BA00A2E901 /* IndexCollectionViewController.m in Sources */,
 			);
@@ -1166,7 +1244,7 @@
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap/BaiduMap_IOSSDK_v2.10.0_Lib",
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap",
 				);
-				GCC_PREFIX_HEADER = "/Users/aef-rd-1/Desktop/LifeHelper/LifeHelper/Global/LifeHelper-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/rd-123/github/LifeHelper/LifeHelper/Global/LifeHelper-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1198,7 +1276,7 @@
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap/BaiduMap_IOSSDK_v2.10.0_Lib",
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap",
 				);
-				GCC_PREFIX_HEADER = "/Users/aef-rd-1/Desktop/LifeHelper/LifeHelper/Global/LifeHelper-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/rd-123/github/LifeHelper/LifeHelper/Global/LifeHelper-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

@@ -13,4 +13,5 @@
  *  shares 保存本地文件的文件名
  */
 NSString *const kSharesFileName = @"sharesList_1";
+NSString *const kFoodsFileName = @"foodsList_1";
 

@@ -90,23 +90,8 @@
 }
 
 #pragma mark - ====local====
-+ (BOOL)localSaveData:(NSDictionary *)dic name:(NSString*)fileName; {
-    
-    NSLog(@"kFilepath&Name:%@",[self filePath:fileName]);
-    if(![[NSFileManager defaultManager] fileExistsAtPath:[self filePath:fileName]]) {
-        NSArray *arr = [[NSArray alloc] init];
-        [arr writeToFile:[self filePath:fileName] atomically:YES];
-    }
-    
-    NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:[self filePath:fileName]];
-    [array addObject:dic];
-    
-    BOOL write = [array writeToFile:[self filePath:fileName] atomically:YES];
-    
-    return write;
-}
 
-+ (BOOL)localSaveDatas:(NSMutableArray *)arr name:(NSString*)fileName; {
++ (BOOL)localSaveDatas:(NSMutableArray *)arr name:(NSString*)fileName {
     
     NSLog(@"kFileName:%@",[self filePath:fileName]);
     if(![[NSFileManager defaultManager] fileExistsAtPath:[self filePath:fileName]]) {
@@ -115,6 +100,19 @@
     }
     
     BOOL write = [arr writeToFile:[self filePath:fileName] atomically:YES];
+    
+    return write;
+}
+
++ (BOOL)localSaveDatasWithDict:(NSDictionary *)dic name:(NSString*)fileName {
+    
+    NSLog(@"kFileName:%@",[self filePath:fileName]);
+    if(![[NSFileManager defaultManager] fileExistsAtPath:[self filePath:fileName]]) {
+        NSDictionary *dic = [[NSDictionary alloc] init];
+        [dic writeToFile:[self filePath:fileName] atomically:YES];
+    }
+    
+    BOOL write = [dic writeToFile:[self filePath:fileName] atomically:YES];
     
     return write;
 }
@@ -130,6 +128,19 @@
     NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:[self filePath:fileName]];
     
     return (NSArray *)array;
+}
+
++ (NSDictionary *)localAllDataDict:(NSString*)fileName; {
+    
+    NSLog(@"kFileName:%@",[self filePath:fileName]);
+    if(![[NSFileManager defaultManager] fileExistsAtPath:[self filePath:fileName]]) {
+        NSDictionary *dic = [[NSDictionary alloc] init];
+        [dic writeToFile:[self filePath:fileName] atomically:YES];
+    }
+    
+    NSDictionary *dicts = [[NSDictionary alloc] initWithContentsOfFile:[self filePath:fileName]];
+    
+    return dicts;
 }
 
 

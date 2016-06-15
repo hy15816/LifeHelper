@@ -122,7 +122,7 @@
     NNLog(@"[GlobalTool sharesAllData]:%@",list) ;
     
     // 获取网络数据-->刷新
-//    [self getScoketList];
+    [self getScoketList];
 }
 
 @end

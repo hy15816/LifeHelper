@@ -45,6 +45,8 @@ static NSString * const reuseIdentifier = @"FoodCollectionViewCell";
     _foodsMenuCategoryArray = [[NSMutableArray alloc] init];
     
     [self getCategory];
+    
+//    [self getData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -127,6 +129,7 @@ static NSString * const reuseIdentifier = @"FoodCollectionViewCell";
             NSLog(@"result == %@",result);
             if ([result[@"status"] integerValue]) {
                 NSArray *tngou = result[@"tngou"];
+                [self saveData:result];
                 [_foodsMenuCategoryArray addObjectsFromArray:tngou];
                 dispatch_main(^{
                     [self.collectionView reloadData];
@@ -138,6 +141,22 @@ static NSString * const reuseIdentifier = @"FoodCollectionViewCell";
         }
     }];
     
+}
+
+- (void)saveData:(NSDictionary *)tngou {
+    
+    BOOL save = [GlobalTool localSaveDatasWithDict:tngou name:kFoodsFileName];
+    if (!save) {
+        NNLog(@"save failed !");
+    }
+    
+    [self getData];
+}
+
+- (void)getData {
+    
+    NSDictionary *list = [GlobalTool localAllDataDict:kFoodsFileName];
+    NNLog(@"list:%@",list);
 }
 
 /*

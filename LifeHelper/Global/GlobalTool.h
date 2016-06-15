@@ -32,6 +32,11 @@
 #define kIOS_8   [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
 #define kIOS_9   [[UIDevice currentDevice].systemVersion floatValue] >= 9.0
 
+/** r red   0-255 g green 0-255 b blue  0-255 a alpha 0-1 */
+#define kCOLORRGB(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+#define kCOLORRANDOM [UIColor colorWithRed:(arc4random() % 255)/255.f green:(arc4random() % 255)/255.f blue:(arc4random() % 255)/255.f alpha:1];
+
+
 // ============菜谱===================
 #define kFOOD_URL_IMAGE(str) [NSString stringWithFormat:@"http://tnfs.tngou.net/img%@",str]
 /**
@@ -65,15 +70,6 @@
 + (NSString *)turnPinYinWithHanZi:(NSString *)hanziString ;
 
 #pragma mark - 本地文件操作
-/**
- *  保存文件到本地
- *
- *  @param dic      NSDictionary 将要保存的dic
- *  @param fileName 文件名
- *
- *  @return save result:YES-suc,NO-fail
- */
-+ (BOOL)localSaveData:(NSDictionary *)dic name:(NSString*)fileName;
 
 /**
  *  保存文件到本地
@@ -86,6 +82,16 @@
 + (BOOL)localSaveDatas:(NSMutableArray *)arr name:(NSString*)fileName;
 
 /**
+ *  保存文件到本地
+ *
+ *  @param dic      NSDictionary 将要保存的dic
+ *  @param fileName 文件名
+ *
+ *  @return save result:YES-suc,NO-fail
+ */
++ (BOOL)localSaveDatasWithDict:(NSDictionary *)dic name:(NSString*)fileName;
+
+/**
  *  获取本地文件
  *
  *  @param fileName 文件名
@@ -93,6 +99,15 @@
  *  @return NSArray
  */
 + (NSArray *)localAllData:(NSString*)fileName;
+
+/**
+ *  获取本地文件
+ *
+ *  @param fileName 文件名
+ *
+ *  @return NSDictionary
+ */
++ (NSDictionary *)localAllDataDict:(NSString*)fileName;
 
 /**
  *  清除指定文件
