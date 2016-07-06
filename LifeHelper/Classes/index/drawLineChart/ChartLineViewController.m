@@ -11,14 +11,19 @@
 
 #import "ChartLineViewController.h"
 #import "ChartView.h"
+#import "ChartGrideView.h"
+#import "LSChartView.h"
 
-@interface ChartLineViewController ()
-
+@interface ChartLineViewController ()<LSChartViewDataSource>
+{
+    BOOL _isOne;
+}
 @property (strong, nonatomic) NSArray *xLabels;
 
 
 @property (strong, nonatomic) NSMutableArray *showHorizonLine;
 
+@property (strong,nonatomic) LSChartView *chartGride;
 
 @end
 
@@ -28,75 +33,70 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor brownColor];
     
     self.xLabels = [[NSArray alloc] initWithObjects:@"10",@"23",@"45",@"70",@"39", nil];
     self.showHorizonLine = [[NSMutableArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4", nil];
     
     //[self drawGrade];
     
-    ChartView *chart = [[ChartView alloc] initWithFrame:CGRectMake(0, 64, DEVICE_WIDTH, DEVICE_HEIGHT-64)];
+    ChartView *chart = [[ChartView alloc] initWithFrame:CGRectMake(50, 64, DEVICE_WIDTH-100, DEVICE_HEIGHT-64)];
     chart.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:chart];
-
+//    [self.view addSubview:chart];
+    
+//    _chartGride = [[ChartGrideView alloc] initWithFrame:CGRectMake(20, 100, DEVICE_WIDTH-40, 150) dataSource:self];
+    
+    _chartGride = [[LSChartView alloc] initWithFrame:CGRectMake(20, 100, DEVICE_WIDTH-40, 150) dataSource:self];
+    
+    _chartGride.backgroundColor = [UIColor clearColor];
+    
+    _chartGride.textColor = [UIColor whiteColor];
+    _chartGride.chartPointColor = [UIColor whiteColor];
+    _chartGride.chartLineColor = [UIColor whiteColor];
+    _chartGride.isHollow = YES;
+    
+    [_chartGride showInView:self.view points:@[@"100",@"150",@"80",@"200",@"500",@"390",@"100",@"570"]];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"刷新" style:UIBarButtonItemStylePlain target:self action:@selector(refreshItem)];
+    
+//    [self.view addSubview:chartGride];
 }
 
-/**
- *  画格子
- */
-- (void)drawGrade {
+- (void)refreshItem{
     
-    // 画横线
-    
-    CGFloat chartCavanHeight = self.view.frame.size.height - UULabelHeight*3;
-    CGFloat levelHeight = chartCavanHeight /4.0;
-    //
-    for (int i=0; i<5; i++) {
-        if ([_showHorizonLine[i] integerValue]>0) {
-            
-            CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-            UIBezierPath *path = [UIBezierPath bezierPath];
-            [path moveToPoint:CGPointMake(UUYLabelwidth,UULabelHeight+i*levelHeight)];
-            [path addLineToPoint:CGPointMake(self.view.frame.size.width,UULabelHeight+i*levelHeight)];
-            [path closePath];
-            shapeLayer.path = path.CGPath;
-            shapeLayer.strokeColor = [[[UIColor blackColor] colorWithAlphaComponent:0.1] CGColor];
-            shapeLayer.fillColor = [[UIColor whiteColor] CGColor];
-            shapeLayer.lineWidth = 1;
-            [self.view.layer addSublayer:shapeLayer];
-        }
-    }
-    
-    
-    
-    // 竖线
-    
-    CGFloat num = 0;
-    if (self.xLabels.count>=20) {
-        num=20.0;
-    }else if (self.xLabels.count<=1){
-        num=1.0;
+    _isOne = !_isOne;
+    NSArray *points;// = @[@"100",@"150",@"80",@"200",@"500",@"390",@"100",@"570"];
+    if (_isOne) {
+        points = @[@"10",@"15",@"8",@"20",@"40",@"39"];
     }else{
-        num = self.xLabels.count;
+        points = @[@"100",@"150",@"80",@"200",@"500",@"390",@"100",@"570",@"600",@"500"];
     }
-    
-    CGFloat _xLabelWidth = (self.view.frame.size.width - UUYLabelwidth)/num;
-    
-    //画竖线
-    for (int i=0; i<self.xLabels.count+1; i++) {
-        CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-        UIBezierPath *path = [UIBezierPath bezierPath];
-        [path moveToPoint:CGPointMake(UUYLabelwidth+i*_xLabelWidth,UULabelHeight)];
-        [path addLineToPoint:CGPointMake(UUYLabelwidth+i*_xLabelWidth,self.view.frame.size.height-2*UULabelHeight)];
-        [path closePath];
-        shapeLayer.path = path.CGPath;
-        shapeLayer.strokeColor = [[[UIColor blackColor] colorWithAlphaComponent:0.1] CGColor];
-        shapeLayer.fillColor = [[UIColor whiteColor] CGColor];
-        shapeLayer.lineWidth = 1;
-        [self.view.layer addSublayer:shapeLayer];
-    }
-    
+    [_chartGride reloadData:points];
 }
+
+- (NSArray *)chartViewHorizontalTitles:(ChartGrideView *)chartView{
+    if (_isOne) {
+        return @[@"10",@"20",@"30",@"40"];
+    }
+    return @[@"100",@"200",@"300",@"400",@"500",@"600"];
+}
+
+- (NSArray *)chartViewVerticalTitles:(ChartGrideView *)chartView{
+    
+    if (_isOne) {
+        return @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    }
+    return @[@"5.3",@"5.9",@"5.16",@"5.23",@"5.30",@"6.6",@"6.13",@"6.20",@"6.27",@"7.3"];
+}
+
+- (UIColor *)backgroundLineColor{
+    
+    return [UIColor whiteColor];
+}
+- (CGFloat)backgroundLineWidth{
+    return 0.5f;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -12,8 +12,8 @@
 #define kGradeMarginTop     10
 #define kGradeMarginLeft    30
 
-#define kVerticalLineMarginLeft     20      //竖线间距(左右)
-#define kHorizontalLineMarginTop    50      //横线间距(上下)
+#define kVerticalLineMarginLeft     40      //竖线间距(左右)
+#define kHorizontalLineMarginTop    20      //横线间距(上下)
 
 #define kDegressToRadians(degress) ((M_PI * degress) / 180)
 
@@ -66,21 +66,21 @@ typedef NS_ENUM(NSInteger,StraightLineType) {
     if (!self.isShowProgress) {
         self.backgroundColor = [UIColor whiteColor];
         
-        [self drawTriangleWith:CGPointMake(85, 320) point2:CGPointMake(35, 370) point3:CGPointMake(135, 370)];
-        [self drawSquareWithFrame:CGRectMake(180, 15, 100, 120) corners:UIRectCornerTopRight | UIRectCornerTopLeft cornerRadii:CGSizeMake(10, 10)];
-        [self drawSquareWithFrame:CGRectMake(35, 110, 80, 100) lineCapStyle:kCGLineCapRound lineJoinStyle:kCGLineJoinBevel];
-        [self drawSquareWithFrame:CGRectMake(35, 220, 80, 80) lineCapStyle:kCGLineCapRound lineJoinStyle:kCGLineJoinBevel];
+//        [self drawTriangleWith:CGPointMake(85, 320) point2:CGPointMake(35, 370) point3:CGPointMake(135, 370)];
+//        [self drawSquareWithFrame:CGRectMake(180, 15, 100, 120) corners:UIRectCornerTopRight | UIRectCornerTopLeft cornerRadii:CGSizeMake(10, 10)];
+//        [self drawSquareWithFrame:CGRectMake(35, 110, 80, 100) lineCapStyle:kCGLineCapRound lineJoinStyle:kCGLineJoinBevel];
+//        [self drawSquareWithFrame:CGRectMake(35, 220, 80, 80) lineCapStyle:kCGLineCapRound lineJoinStyle:kCGLineJoinBevel];
         [self drawGrade:CGRectMake(kGradeMarginLeft, kGradeMarginTop, self.frame.size.width - kGradeMarginLeft, self.frame.size.height - kGradeMarginTop - kGradeMarginLeft) radius:1];
         
-        NSArray *array = @[@[@"40",@"40"],@[@"35",@"80"],@[@"65",@"100"],@[@"135",@"100"],@[@"165",@"60"],@[@"145",@"30"],@[@"85",@"0"]];
-        [self drawCustomWithPoints:array ];
+//        NSArray *array = @[@[@"40",@"40"],@[@"35",@"80"],@[@"65",@"100"],@[@"135",@"100"],@[@"165",@"60"],@[@"145",@"30"],@[@"85",@"0"]];
+//        [self drawCustomWithPoints:array ];
         
-        // 顺时针画弧  从0°角度开始 画135°
-        [self drawARCPath:CGPointMake(200, 200) radius:50 startAngle:0 endAngle:kDegressToRadians(135) clockwise:NO];
-        // 贝塞尔二次曲线
-        [self drawCurveLine:CGPointMake(180, 300) endPoint:CGPointMake(self.frame.size.width-20, 300) controlPoint:CGPointMake(260, 250)];
-        // 贝塞尔三次曲线
-        [self drawCurve2Line:CGPointMake(160,350) endPoint:CGPointMake(self.frame.size.width-20, 350) controlPoint1:CGPointMake(180, 300) controlPoint2:CGPointMake(220, 400)];
+//        // 顺时针画弧  从0°角度开始 画135°
+//        [self drawARCPath:CGPointMake(200, 200) radius:50 startAngle:0 endAngle:kDegressToRadians(135) clockwise:NO];
+//        // 贝塞尔二次曲线
+//        [self drawCurveLine:CGPointMake(180, 300) endPoint:CGPointMake(self.frame.size.width-20, 300) controlPoint:CGPointMake(260, 250)];
+//        // 贝塞尔三次曲线
+//        [self drawCurve2Line:CGPointMake(160,350) endPoint:CGPointMake(self.frame.size.width-20, 350) controlPoint1:CGPointMake(180, 300) controlPoint2:CGPointMake(220, 400)];
     }
     
 }
@@ -330,10 +330,10 @@ typedef NS_ENUM(NSInteger,StraightLineType) {
 - (void)drawGrade:(CGRect)rect radius:(CGFloat)radius {
     
     // 外框
-    UIBezierPath *pathRound = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius];
-    UIColor *roundColor = [UIColor greenColor];
-    [roundColor set];
-    [pathRound stroke];
+//    UIBezierPath *pathRound = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius];
+//    UIColor *roundColor = [UIColor greenColor];
+//    [roundColor set];
+//    [pathRound stroke];
     
     // 竖线
     NSInteger verticalLineCount = rect.size.width / kVerticalLineMarginLeft;
@@ -348,16 +348,16 @@ typedef NS_ENUM(NSInteger,StraightLineType) {
         
     }
     
-    // 横线
+    // 横线 从上往下，第一根横线不要了
     int horizontalLineCount = rect.size.height / kHorizontalLineMarginTop;
     for (int i=0; i< horizontalLineCount; i++) {
         
-        NSString *title = [NSString stringWithFormat:@"%d0",horizontalLineCount-i-1];
+        NSString *title = [NSString stringWithFormat:@"%d0",horizontalLineCount-i];
         UILabel *label = [self createTextLabel:title center:CGPointMake(10, i * (rect.size.height) / horizontalLineCount + kGradeMarginTop)];
         [self addSubview:label];
         
-        CGPoint pointstart = CGPointMake(kGradeMarginLeft, i * (rect.size.height) / horizontalLineCount + kGradeMarginTop);
-        CGPoint pointend = CGPointMake(rect.size.width + kGradeMarginLeft , i * (rect.size.height) / horizontalLineCount + kGradeMarginTop);
+        CGPoint pointstart = CGPointMake(kGradeMarginLeft, (i+1) * (rect.size.height) / horizontalLineCount + kGradeMarginTop);
+        CGPoint pointend = CGPointMake(rect.size.width + kGradeMarginLeft , (i+1) * (rect.size.height) / horizontalLineCount + kGradeMarginTop);
         UIBezierPath *horizontalLine = [self drawStraightLine:pointstart endPoint:pointend];
         [horizontalLine stroke];
     }
@@ -412,6 +412,20 @@ typedef NS_ENUM(NSInteger,StraightLineType) {
 }
 
 - (void)setTrackPath {
+    
+    UIBezierPath *trackOutLine = [UIBezierPath bezierPathWithArcCenter:self.center radius:(self.bounds.size.width - 1)/ 2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+    CAShapeLayer *_trackLayerOutLine = [CAShapeLayer new];
+    [self.layer addSublayer:_trackLayerOutLine];
+    _trackLayerOutLine.fillColor = nil;
+    _trackLayerOutLine.frame = self.bounds;
+    
+    _trackLayerOutLine.path = trackOutLine.CGPath;
+
+    
+    
+    
+    
+    
     
     _trackPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];;
     _trackLayer.path = _trackPath.CGPath;

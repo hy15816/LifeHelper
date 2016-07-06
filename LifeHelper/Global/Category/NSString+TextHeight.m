@@ -15,7 +15,7 @@
     NSDictionary * attributes = @{NSFontAttributeName : font};
     
     CGSize contentSize = [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                                            options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+                                            options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading | NSStringDrawingUsesDeviceMetrics)
                                          attributes:attributes
                                             context:nil].size;
     

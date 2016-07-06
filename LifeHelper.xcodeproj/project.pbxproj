@@ -98,6 +98,15 @@
 		13FCBD361CBB78F3000A20E2 /* SharesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FCBD351CBB78F3000A20E2 /* SharesStoryboard.storyboard */; };
 		13FCBD391CBB7B68000A20E2 /* SharesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FCBD381CBB7B68000A20E2 /* SharesModel.m */; };
 		B24D3BFB38014C060609A257 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45BA2884E1749281375D988 /* libPods.a */; };
+		B4144E041D214AB90074D3E9 /* LSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E031D214AB90074D3E9 /* LSScrollView.m */; };
+		B4144E071D214B950074D3E9 /* LSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E061D214B950074D3E9 /* LSTextView.m */; };
+		B4144E091D225CC60074D3E9 /* licecap_16_6_28_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4144E081D225CC60074D3E9 /* licecap_16_6_28_1.gif */; };
+		B4144E0D1D236D060074D3E9 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E0C1D236D060074D3E9 /* LockViewController.m */; };
+		B4144E111D236D150074D3E9 /* LSCustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E101D236D150074D3E9 /* LSCustomSlider.m */; };
+		B4144E791D2756FE0074D3E9 /* UIScrollView+PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E781D2756FE0074D3E9 /* UIScrollView+PlaceholderView.m */; };
+		B4144E7C1D27595B0074D3E9 /* UIView+LSLayoutExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E7B1D27595B0074D3E9 /* UIView+LSLayoutExtensions.m */; };
+		B4144E7F1D2759BC0074D3E9 /* LSWeakObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E7E1D2759BC0074D3E9 /* LSWeakObjectContainer.m */; };
+		B4144E821D2759F70074D3E9 /* LSPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4144E811D2759F70074D3E9 /* LSPlaceholderView.m */; };
 		B425EFE31CF0165F004159CB /* LSLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFE21CF0165F004159CB /* LSLoopView.m */; };
 		B425EFE61CF0276F004159CB /* TestLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFE51CF0276F004159CB /* TestLoopViewController.m */; };
 		B425EFF71CF2BA2E004159CB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFEA1CF2BA2E004159CB /* TAAbstractDotView.m */; };
@@ -107,6 +116,9 @@
 		B425EFFB1CF2BA2E004159CB /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF21CF2BA2E004159CB /* SDCollectionViewCell.m */; };
 		B425EFFC1CF2BA2E004159CB /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF41CF2BA2E004159CB /* SDCycleScrollView.m */; };
 		B425EFFD1CF2BA2E004159CB /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B425EFF61CF2BA2E004159CB /* UIView+SDExtension.m */; };
+		B4C807061D18107700F26624 /* ChartGrideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C807051D18107700F26624 /* ChartGrideView.m */; };
+		B4C807111D19105800F26624 /* LSChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C807101D19105800F26624 /* LSChartView.m */; };
+		B4C807281D19739600F26624 /* LSScrollItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C807271D19739600F26624 /* LSScrollItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +297,23 @@
 		13FCBD371CBB7B68000A20E2 /* SharesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharesModel.h; sourceTree = "<group>"; };
 		13FCBD381CBB7B68000A20E2 /* SharesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharesModel.m; sourceTree = "<group>"; };
 		36AE39110195C5FF52BC3A73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B4144E021D214AB90074D3E9 /* LSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSScrollView.h; sourceTree = "<group>"; };
+		B4144E031D214AB90074D3E9 /* LSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSScrollView.m; sourceTree = "<group>"; };
+		B4144E051D214B950074D3E9 /* LSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTextView.h; sourceTree = "<group>"; };
+		B4144E061D214B950074D3E9 /* LSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTextView.m; sourceTree = "<group>"; };
+		B4144E081D225CC60074D3E9 /* licecap_16_6_28_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = licecap_16_6_28_1.gif; sourceTree = "<group>"; };
+		B4144E0B1D236D060074D3E9 /* LockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		B4144E0C1D236D060074D3E9 /* LockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		B4144E0F1D236D150074D3E9 /* LSCustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCustomSlider.h; sourceTree = "<group>"; };
+		B4144E101D236D150074D3E9 /* LSCustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCustomSlider.m; sourceTree = "<group>"; };
+		B4144E771D2756FE0074D3E9 /* UIScrollView+PlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PlaceholderView.h"; sourceTree = "<group>"; };
+		B4144E781D2756FE0074D3E9 /* UIScrollView+PlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PlaceholderView.m"; sourceTree = "<group>"; };
+		B4144E7A1D27595B0074D3E9 /* UIView+LSLayoutExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSLayoutExtensions.h"; sourceTree = "<group>"; };
+		B4144E7B1D27595B0074D3E9 /* UIView+LSLayoutExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSLayoutExtensions.m"; sourceTree = "<group>"; };
+		B4144E7D1D2759BC0074D3E9 /* LSWeakObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWeakObjectContainer.h; sourceTree = "<group>"; };
+		B4144E7E1D2759BC0074D3E9 /* LSWeakObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSWeakObjectContainer.m; sourceTree = "<group>"; };
+		B4144E801D2759F70074D3E9 /* LSPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlaceholderView.h; sourceTree = "<group>"; };
+		B4144E811D2759F70074D3E9 /* LSPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPlaceholderView.m; sourceTree = "<group>"; };
 		B425EFE11CF0165F004159CB /* LSLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoopView.h; sourceTree = "<group>"; };
 		B425EFE21CF0165F004159CB /* LSLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoopView.m; sourceTree = "<group>"; };
 		B425EFE41CF0276F004159CB /* TestLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLoopViewController.h; sourceTree = "<group>"; };
@@ -303,6 +332,12 @@
 		B425EFF41CF2BA2E004159CB /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		B425EFF51CF2BA2E004159CB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		B425EFF61CF2BA2E004159CB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		B4C807041D18107700F26624 /* ChartGrideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartGrideView.h; sourceTree = "<group>"; };
+		B4C807051D18107700F26624 /* ChartGrideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartGrideView.m; sourceTree = "<group>"; };
+		B4C8070F1D19105800F26624 /* LSChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSChartView.h; sourceTree = "<group>"; };
+		B4C807101D19105800F26624 /* LSChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSChartView.m; sourceTree = "<group>"; };
+		B4C807261D19739600F26624 /* LSScrollItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSScrollItemView.h; sourceTree = "<group>"; };
+		B4C807271D19739600F26624 /* LSScrollItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSScrollItemView.m; sourceTree = "<group>"; };
 		C45BA2884E1749281375D988 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3B0B8E496F60746FBFA12B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,6 +402,12 @@
 				1354AAD21CB510BE006F1C8E /* WiFiViewController.m */,
 				B425EFE41CF0276F004159CB /* TestLoopViewController.h */,
 				B425EFE51CF0276F004159CB /* TestLoopViewController.m */,
+				B4C807261D19739600F26624 /* LSScrollItemView.h */,
+				B4C807271D19739600F26624 /* LSScrollItemView.m */,
+				B4144E021D214AB90074D3E9 /* LSScrollView.h */,
+				B4144E031D214AB90074D3E9 /* LSScrollView.m */,
+				B4144E051D214B950074D3E9 /* LSTextView.h */,
+				B4144E061D214B950074D3E9 /* LSTextView.m */,
 			);
 			path = WiFi;
 			sourceTree = "<group>";
@@ -411,6 +452,10 @@
 				135C14D91CAA5B4200C5D654 /* ChartLineViewController.m */,
 				135C14DB1CAA613E00C5D654 /* ChartView.h */,
 				135C14DC1CAA613E00C5D654 /* ChartView.m */,
+				B4C807041D18107700F26624 /* ChartGrideView.h */,
+				B4C807051D18107700F26624 /* ChartGrideView.m */,
+				B4C8070F1D19105800F26624 /* LSChartView.h */,
+				B4C807101D19105800F26624 /* LSChartView.m */,
 			);
 			path = drawLineChart;
 			sourceTree = "<group>";
@@ -518,6 +563,7 @@
 		136541291C97BAD400A2E901 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				B4144E761D2756D00074D3E9 /* PlaceholderView */,
 				B425EFE71CF2BA2E004159CB /* SDCycleScrollView */,
 				136537111CBE2543008B6F98 /* MPNotificationView */,
 				1366EAD71CA23C160081D2F9 /* BaiduMap */,
@@ -545,6 +591,7 @@
 		1365412B1C97BAD400A2E901 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B4144E081D225CC60074D3E9 /* licecap_16_6_28_1.gif */,
 				1367A11E1CA3D744002D2AB7 /* cnhk.mp3 */,
 				13BEDB771C980AE1004619F6 /* 1.gif */,
 				13BEDB781C980AE1004619F6 /* 3.gif */,
@@ -613,6 +660,7 @@
 		136541531C97E0A800A2E901 /* index */ = {
 			isa = PBXGroup;
 			children = (
+				B4144E0A1D236CF30074D3E9 /* OpenLock */,
 				13FCBD2E1CBB7856000A20E2 /* shares */,
 				13622EE01CB606E600520BD3 /* Foods */,
 				1354AAD01CB510A1006F1C8E /* WiFi */,
@@ -787,6 +835,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B4144E0A1D236CF30074D3E9 /* OpenLock */ = {
+			isa = PBXGroup;
+			children = (
+				B4144E0E1D236D150074D3E9 /* LSCustomSlider */,
+				B4144E0B1D236D060074D3E9 /* LockViewController.h */,
+				B4144E0C1D236D060074D3E9 /* LockViewController.m */,
+			);
+			path = OpenLock;
+			sourceTree = "<group>";
+		};
+		B4144E0E1D236D150074D3E9 /* LSCustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				B4144E0F1D236D150074D3E9 /* LSCustomSlider.h */,
+				B4144E101D236D150074D3E9 /* LSCustomSlider.m */,
+			);
+			path = LSCustomSlider;
+			sourceTree = "<group>";
+		};
+		B4144E761D2756D00074D3E9 /* PlaceholderView */ = {
+			isa = PBXGroup;
+			children = (
+				B4144E771D2756FE0074D3E9 /* UIScrollView+PlaceholderView.h */,
+				B4144E781D2756FE0074D3E9 /* UIScrollView+PlaceholderView.m */,
+				B4144E7A1D27595B0074D3E9 /* UIView+LSLayoutExtensions.h */,
+				B4144E7B1D27595B0074D3E9 /* UIView+LSLayoutExtensions.m */,
+				B4144E7D1D2759BC0074D3E9 /* LSWeakObjectContainer.h */,
+				B4144E7E1D2759BC0074D3E9 /* LSWeakObjectContainer.m */,
+				B4144E801D2759F70074D3E9 /* LSPlaceholderView.h */,
+				B4144E811D2759F70074D3E9 /* LSPlaceholderView.m */,
+			);
+			path = PlaceholderView;
+			sourceTree = "<group>";
+		};
 		B425EFE01CF0165F004159CB /* loopView */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,6 +986,7 @@
 				TargetAttributes = {
 					136540F11C97B93E00A2E901 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UX43PF86LH;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -957,6 +1040,7 @@
 				137C03DC1CA1312300D48EA9 /* AddCityCollectionHeaderView.xib in Resources */,
 				136B17121C9BE1DD00BDF51B /* RechargeCollectionViewCell.xib in Resources */,
 				13BEDB791C980AE1004619F6 /* 1.gif in Resources */,
+				B4144E091D225CC60074D3E9 /* licecap_16_6_28_1.gif in Resources */,
 				137C03DE1CA1312300D48EA9 /* AddCityCollectionViewCell.xib in Resources */,
 				137C03E81CA141D000D48EA9 /* AddCityTableViewCell.xib in Resources */,
 				136541581C97E0DA00A2E901 /* IndexStoryboard.storyboard in Resources */,
@@ -1033,24 +1117,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C807111D19105800F26624 /* LSChartView.m in Sources */,
 				137A108C1CB75833009A63EF /* FoodDetailTableViewController.m in Sources */,
 				13BEDB711C97FF54004619F6 /* BaseViewController.m in Sources */,
 				136541471C97BBEA00A2E901 /* UIView+Extension.m in Sources */,
 				136537171CBE2543008B6F98 /* OBGradientView.m in Sources */,
+				B4144E821D2759F70074D3E9 /* LSPlaceholderView.m in Sources */,
 				136541431C97BBEA00A2E901 /* NSDictionary+Helper.m in Sources */,
 				136541521C97DB7E00A2E901 /* HttpRequestURL.m in Sources */,
 				1354AAD31CB510BE006F1C8E /* WiFiViewController.m in Sources */,
 				137239A61C9CDE3300CE3338 /* YIMKeyboardView.m in Sources */,
 				B425EFF81CF2BA2E004159CB /* TAAnimatedDotView.m in Sources */,
+				B4144E791D2756FE0074D3E9 /* UIScrollView+PlaceholderView.m in Sources */,
 				137239AA1C9CDFD700CE3338 /* KeyboardCollectionViewCell.m in Sources */,
 				1354AAAA1CB4B9A5006F1C8E /* AKNumericFormatter.m in Sources */,
 				B425EFFC1CF2BA2E004159CB /* SDCycleScrollView.m in Sources */,
 				B425EFFB1CF2BA2E004159CB /* SDCollectionViewCell.m in Sources */,
+				B4144E7F1D2759BC0074D3E9 /* LSWeakObjectContainer.m in Sources */,
 				13DCE7081CAD253700E96BD2 /* PhotoTableViewController.m in Sources */,
 				137C03EB1CA14F7800D48EA9 /* AddCityModel.m in Sources */,
 				B425EFFD1CF2BA2E004159CB /* UIView+SDExtension.m in Sources */,
 				13FCBD391CBB7B68000A20E2 /* SharesModel.m in Sources */,
 				136541451C97BBEA00A2E901 /* NSString+TextHeight.m in Sources */,
+				B4144E0D1D236D060074D3E9 /* LockViewController.m in Sources */,
 				1354AAAB1CB4B9A5006F1C8E /* NSString+AKNumericFormatter.m in Sources */,
 				13622EF71CB65A1100520BD3 /* FoodListViewController.m in Sources */,
 				1367D2591CBCDE0500E9B8F0 /* SharesDetailViewController.m in Sources */,
@@ -1058,6 +1147,7 @@
 				137A10891CB743B3009A63EF /* FoodsListModel.m in Sources */,
 				13DCE70B1CAD2CE700E96BD2 /* NotFoundView.m in Sources */,
 				135C14DA1CAA5B4200C5D654 /* ChartLineViewController.m in Sources */,
+				B4144E7C1D27595B0074D3E9 /* UIView+LSLayoutExtensions.m in Sources */,
 				136540FA1C97B93E00A2E901 /* AppDelegate.mm in Sources */,
 				137C03DD1CA1312300D48EA9 /* AddCityCollectionViewCell.m in Sources */,
 				136B17101C9BCAF300BDF51B /* RechargeCollectionViewCell.m in Sources */,
@@ -1079,8 +1169,11 @@
 				1365415B1C97E12500A2E901 /* IndexCollectionCell.m in Sources */,
 				137C03C21CA0F3C200D48EA9 /* AlertView.m in Sources */,
 				136537161CBE2543008B6F98 /* MPNotificationView.m in Sources */,
+				B4144E071D214B950074D3E9 /* LSTextView.m in Sources */,
 				136B170D1C9BCAC800BDF51B /* RechargeCollectionViewController.m in Sources */,
 				13BEDB741C97FF82004619F6 /* BaseTableViewController.m in Sources */,
+				B4C807281D19739600F26624 /* LSScrollItemView.m in Sources */,
+				B4144E041D214AB90074D3E9 /* LSScrollView.m in Sources */,
 				13622EEB1CB6476900520BD3 /* FoodCollectionViewCell.m in Sources */,
 				13BEDB851C984EEE004619F6 /* TuringViewController.m in Sources */,
 				135C14DD1CAA613E00C5D654 /* ChartView.m in Sources */,
@@ -1090,8 +1183,10 @@
 				B425EFF71CF2BA2E004159CB /* TAAbstractDotView.m in Sources */,
 				136541331C97BB5600A2E901 /* LoginTableViewController.m in Sources */,
 				13622EE31CB6070400520BD3 /* FoodsTableViewController.m in Sources */,
+				B4144E111D236D150074D3E9 /* LSCustomSlider.m in Sources */,
 				B425EFE31CF0165F004159CB /* LSLoopView.m in Sources */,
 				13FCBD341CBB78DA000A20E2 /* SharesCell.m in Sources */,
+				B4C807061D18107700F26624 /* ChartGrideView.m in Sources */,
 				137C03BB1CA0D47600D48EA9 /* ShakeViewController.m in Sources */,
 				136540F71C97B93E00A2E901 /* main.m in Sources */,
 				13584A6F1C9FEBAC00F04BE3 /* TestViewController.m in Sources */,
@@ -1238,7 +1333,7 @@
 			baseConfigurationReference = 36AE39110195C5FF52BC3A73 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap/BaiduMap_IOSSDK_v2.10.0_Lib",
@@ -1270,7 +1365,7 @@
 			baseConfigurationReference = FE3B0B8E496F60746FBFA12B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeHelper/External/BaiduMap/BaiduMap_IOSSDK_v2.10.0_Lib",

@@ -133,4 +133,20 @@
  *  @return result:YES-suc,NO-fail
  */
 + (BOOL)localClearFileCacheWithType:(NSString *)type;
+
+
+
+#pragma mark - 显示一个活动指示器
+/**
+ *  显示一个活动指示器
+ *
+ *  @param view     显示在哪个view上
+ */
++ (void)showActInView:(UIView *)view;
+/**
+ *  隐藏 act
+ *
+ *  @param index @see +[showAct:complete]  若全部隐藏index=-1  正常按顺序 第一个是0
+ */
++ (void)dismissAct:(NSInteger)index;
 @end

@@ -13,6 +13,7 @@
 #import "TestViewController.h"
 #import "ShakeViewController.h"
 #import "ChartLineViewController.h"
+#import "LockViewController.h"
 
 @interface IndexCollectionViewController ()
 
@@ -163,6 +164,14 @@ static NSString * const reuseIdentifier = @"Cell";
             // shares
             controller = kStoryboardShares(@"SharesTableViewController");
             break;
+        case 10:
+            // shares
+            controller = kStoryboardShares(@"SharesTableViewController");
+            break;
+        case 11:
+            // shares
+            controller = [[LockViewController alloc] init];
+            break;
         default:
             controller = [[ShakeViewController alloc] init];
             break;
@@ -195,7 +204,7 @@ static NSString * const reuseIdentifier = @"Cell";
     if (!_itemsList) {
         _itemsList = [[NSMutableArray alloc] init];
     }
-    NSArray *names = @[@"phone",@"Turing",@"recharge",@"weather",@"device",@"draw",@"photo",@"WiFi",@"Foods",@"shares",@"..."];
+    NSArray *names = @[@"phone",@"Turing",@"recharge",@"weather",@"device",@"draw",@"photo",@"WiFi",@"Foods",@"shares",@"test",@"0.0",@"..."];
     for (int i=0; i<names.count; i++) {
         NSDictionary *dic = @{@"id":[NSString stringWithFormat:@"%d",i],
                               @"name":names[i],
